@@ -1,3 +1,4 @@
+import Link from "next/link";
 import EvalForm from "./EvalForm";
 import { RUBRIC } from "@/lib/rubric";
 
@@ -17,7 +18,11 @@ export default function EvalPage() {
       <p className="mt-4 max-w-2xl text-lg leading-8 text-[#52545e]">
         Paste a real product decision — a spec, a roadmap call, a launch plan. You get back one
         sharp question per fixed category, not a freeform critique. The categories are set in
-        code, not chosen by the model — Chapter 14 (coming) covers why that distinction matters.
+        code, not chosen by the model —{" "}
+        <Link href="/chapters/devils-advocate-layer" className="text-[#4145e6] underline underline-offset-2">
+          Chapter 14
+        </Link>{" "}
+        covers why that distinction matters.
       </p>
 
       <div className="mt-8 rounded-xl border border-[#e4e4e9] bg-[#fafafa] p-5 text-sm text-[#52545e]">
