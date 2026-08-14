@@ -11,13 +11,14 @@
   specific devil's-advocate question per fixed category (assumption risk, evidence gap, incentive
   misalignment, reversibility, second-order effects) — the categories are set in code, not chosen
   by the model.
-- Ships honestly incomplete: 6 of 17 chapters are live today; the rest are marked "Coming" in the
-  table of contents rather than hidden or faked.
+- All 17 chapters are live — each one anchored to a real, verifiable decision or incident from this
+  build, not padded out to hit the number.
 
 ## Try it
 
-🔗 Live link: pending deploy (see Status below) — no signup required, 6 chapters free to read, eval
-tool free to use.
+🔗 **[ai-pm-field-manual.vercel.app](https://ai-pm-field-manual.vercel.app)** — no signup required,
+free to read, eval tool free to use (capped at 8 reviews/session for cost control — see
+`app/api/eval/route.ts`).
 
 ## The numbers
 
@@ -76,12 +77,15 @@ something real to reflect on._
 
 ## Roadmap
 
-- [ ] Write chapters 6, 7, 9–17 (currently marked "Coming")
-- [ ] Deploy to a live URL (`fieldmanual.amruth.space` per the build brief)
+- [x] Write chapters 6, 7, 9–17
+- [x] Deploy to a live URL
+- [ ] Custom domain (`fieldmanual.amruth.space` per the build brief)
+- [ ] Set `ANTHROPIC_API_KEY` on the Vercel project — deliberately not set yet; the eval tool shows
+      a clear "not configured" message until it is, chapter content works fully without it
 - [ ] Add Plausible/Vercel Analytics once live, so "N readers" claims are real before they're made
 - [ ] Consider splitting the Decision Eval Tool into its own linkable page in the portfolio nav
       once it has real usage to point to
 
 ## Status
 
-🟡 In progress · Solo build · August 2026 · 6/17 chapters live, eval tool functional, not yet deployed
+🟢 Live · Solo build · August 2026 · 17/17 chapters live, eval tool functional
